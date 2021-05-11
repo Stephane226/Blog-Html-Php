@@ -59,7 +59,7 @@
 
             </p>
             <div class="wiew-blog-alt">
-                <button>Read All</button>
+               <a href="../view.php"> <button>Read All</button></a>
                 <div><span> 03/04/2021</span> By Admin</div>
             </div>
 

@@ -26,7 +26,7 @@
                <input type="file" class="blog-file blog-posts">
                <textarea name="" id="" class="blog-posts text-area">   </textarea>
           
-               <button type="submit" class="form-top-btn">View More</button>
+               <button type="submit" class="form-top-btn">Submit</button>
   <br><br>
     </div>
     <div class="image-blog-edit">
