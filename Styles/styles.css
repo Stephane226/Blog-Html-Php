@@ -309,6 +309,8 @@ body{
     -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
    padding:5px;
+  
+
    
 }
 .blog-row{
@@ -321,7 +323,7 @@ body{
     margin-right: auto;
     margin-bottom: 10px;
     margin-left: auto;
-    background-color:steelblue;
+    background-color:#183153 ;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .blog-row table{
@@ -334,4 +336,97 @@ body{
 .blog-row table tr td a{
     text-decoration:none;
     color:rgb(236, 236, 236)
+}
+.blog-row table tr td a .fas{
+ font-size:15px
+}
+.blog-title{
+    width: 60%;
+    height: 20px;
+    border:1px solid black;
+    outline:none;
+}
+.form-blog-post{
+    width:90%;
+    margin:0 auto;
+   display: block;
+
+
+
+}
+.blog-posts{
+    display:block;
+    margin:10px;
+    padding:10px;
+}
+
+.text-area{
+    width:60%;
+    min-height:430px;
+}
+.admin-tables h3{
+    color:black;
+    font-weight:600;
+    margin:10px;
+}
+.alt-footer-admin{
+    width:80%;
+    height:50px;
+    text-align:center;
+    margin:0 auto;
+    background-color:#183153;
+    color:rgb(230, 177, 4);
+    padding:10px; 
+    overflow-x:hidden;
+    position:relative;
+}
+.blog-post-form{
+    display:flex;
+    justify-content:space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+.blog-file{
+    background-color: #183153;
+    width: 200px;
+    border-radius: 3px;
+    height: 30px;
+
+}
+
+.form-top-btn{
+
+    width: 250px;
+    height:50px;
+    background-color: #183153;
+    color:white;
+    margin:0 auto;
+    font-weight:600;
+    border-radius: 3px;
+    outline:none;
+    border:none
+
+}
+.blog-post-section{
+ /* background-image: url("../images/bl.jpg");*/
+ 
+}
+
+.image-blog-edit img{
+    width: 400px;
+    height: 550px;
+    bordeR: 4px solid #183153;
+}
+.go-back{
+    font-size:25px;
+    color:yellow;
+    position:absolute;
+    font-weight:700;
+    margin:3px;
+  left:0;
+    
+}
+a{
+    color:yellow;
+    text-decoration:none;
 }
