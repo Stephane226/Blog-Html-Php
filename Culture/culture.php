@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/styles.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
     <title>blog Islam</title>
 </head>
 <body>
@@ -139,6 +141,64 @@
 
     
 </div>
+
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="span_1_of_3">
+            <h6>About</h6>
+            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          </div>
+
+          <div class="">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="">C</a></li>
+              <li><a href="">UI Design</a></li>
+              <li><a href="">PHP</a></li>
+              <li><a href="">Java</a></li>
+              <li><a href="">Android</a></li>
+              <li><a href="">Templates</a></li>
+            </ul>
+          </div>
+
+          <div class="">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Contribute</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="">
+            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+         <a href="#">Masaaki.Stephane</a>.
+            </p>
+          </div>
+
+          <div class="">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fab fa-instagram-square"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+
+
+  </body>
+</html>
     
-</body>
-</html> 
