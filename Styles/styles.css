@@ -393,7 +393,22 @@ body{
     height: 40px;
 
 }
+.add-post-top-btn .fas{
+    font-size:19px
+}
+.add-post-top-btn{
 
+    width: 180px;
+    height:50px;
+    background-color: #183153;
+    color:white;
+    margin:0 auto;
+    font-weight:600;
+    border-radius: 3px;
+    outline:none;
+    border:none
+
+}
 .form-top-btn{
 
     width: 250px;
@@ -438,7 +453,8 @@ a{
     text-decoration:none;
 }
 .banner-blog-top{
-width:100%;
+width:80%;
+margin:0 auto;
 height:200px;
     background-image: url("../images/img3.jpeg");
     background-size:cover
@@ -453,10 +469,44 @@ height:200px;
 
 }
 
+.view-blog-admin{
+    width:80%;
+    margin:0 auto;
+    background-color:whitesmoke;
+    padding:15px;
+    font-size:17px;
+
+}
 
 
+.delete-post{
+    width:25%;
+    height:100px;
+    padding:10px;
+    margin:0 auto;
+    background-color:whitesmoke;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  
+}
+.delete-post-select{
+    display:flex;
+    justify-content:space-around;
+
+}
+.delete-post-select button{
+
+    width: 100px;
+    height:30px;
+    background-color: #183153;
+    color:white;
+    margin:0 auto;
+    font-weight:600;
+    border-radius: 3px;
+    outline:none;
+    border:none
 
 
+}
 
 
 

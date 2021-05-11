@@ -10,6 +10,14 @@
     <title>blog Islam</title>
 </head>
 <body>
- s
+    <br><br><br>
+                   <div class="delete-post">
+                       <h3>Do you want to delete that post?</h3>
+
+                       <div class="delete-post-select"> 
+                         <a href=""> <button> YES</button></a> 
+                         <a href="index.php"> <button > NO</button></a> 
+                       </div>
+                   </div>
 </body>
 </html>

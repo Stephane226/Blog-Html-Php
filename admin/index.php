@@ -13,15 +13,15 @@
 
  <section>
    <div class="admin-tables">
-    <h3> All Posts  </h3>
+    <h3 style="margin-left:50px"> All Posts <a href="post.php"> <button class="add-post-top-btn">Add Post <i class="fas fa-plus-circle"></i></button></a> </h3>
          
-
+<br>
           <div class="blog-row">
           <table>
             <tr>
               <td width="10%"> Post no: 1 <br> 02/04/2021</td>
               <td width="40%"> Why are the man all pordige all ?</td>
-              <td width="10%"> <a href=""> <span><i class="fas fa-eye"></i> </span>  View </a> </td>
+              <td width="10%"> <a href="view.php"> <span><i class="fas fa-eye"></i> </span>  View </a> </td>
               <td width="10%"> <a href="modify.php"> <span> <i class="fas fa-pen"></i> </span> Modify </a></td>
               <td width="20%"><a href=""> <span>  <i class="fas fa-signal"></i></span> Active</a> / <a href=""> Desactive</a></td>
               <td width="10%"> <a href="delete.php"><span> <i class="fas fa-trash"></i> </span> Delete</a></td>

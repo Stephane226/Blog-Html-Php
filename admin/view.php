@@ -15,25 +15,11 @@
 <body>
     
 
-<div class="header">
-    <div class="section group">
-        <div class="col span_1_of_3">
-            logo        
-        </div>
-        <div class="col span_2_of_3 header">
-    
-            <div class="section group">        
-              <div class="col span_1_of_6">  <a href="./index.php">Home </a></div>
-                 <div class="col span_1_of_6"> <a href="./News/news.php">News  </a></div>
-                <div class="col span_1_of_6"> <a href="./culture/culture.php"> Culture </a></div>
-                <div class="col span_1_of_6"> <a href="./Business/business.html"> Business </a>  </div>
-                <div class="col span_1_of_6"> <a href="./Science/science.html">Science</a> </div>
-            </div>
-        
-        </div>
-      
-    </div>
+<section class="blog-post-section">
+<div class="alt-footer-admin">
+<span class="go-back"> <a href="index.php">  <i class="fas fa-arrow-left"></i></a> </span>    Admin 
 </div>
+   
 
 
 
@@ -45,7 +31,7 @@ dd
     </div>
    <section>
  
-     <div class="view-blog">
+     <div class="view-blog-admin">
      <h2>Where come from does it come from?</h2>
      <div class="image-blog-view">
         <img src="./images/img3.jpeg" alt="">
@@ -98,65 +84,11 @@ There are many variations of passages of Lorem Ipsum available, but the majority
    </div>
   
    </section>
-
-
-
-  <!-- Site footer -->
-  <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="span_1_of_3">
-            <h6>About</h6>
-            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
-          </div>
-
-          <div class="">
-            <h6>Categories</h6>
-            <ul class="footer-links">
-              <li><a href="">C</a></li>
-              <li><a href="">UI Design</a></li>
-              <li><a href="">PHP</a></li>
-              <li><a href="">Java</a></li>
-              <li><a href="">Android</a></li>
-              <li><a href="">Templates</a></li>
-            </ul>
-          </div>
-
-          <div class="">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="">About Us</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li><a href="">Contribute</a></li>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Sitemap</a></li>
-            </ul>
-          </div>
-        </div>
-        <hr>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="">
-            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
-         <a href="#">Masaaki.Stephane</a>.
-            </p>
-          </div>
-
-          <div class="">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fab fa-instagram-square"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>   
-            </ul>
-          </div>
-        </div>
-      </div>
-</footer>
-
-
-
+   <section class="blog-post-section">
+<div class="alt-footer-admin">
+<span class="go-back"> <a href="index.php">  <i class="fas fa-arrow-left"></i></a> </span>    Admin 
+</div>
+   
   </body>
 </html>
     
