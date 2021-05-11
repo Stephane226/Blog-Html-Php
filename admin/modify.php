@@ -1,5 +1,5 @@
 <?php 
- echo(date("d-m-Y",time()));?>
+ //echo(date("d-m-Y",time()));?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -342,7 +342,7 @@ body{
 }
 .blog-title{
     width: 60%;
-    height: 20px;
+    height: 2t40px;
     border:1px solid black;
     outline:none;
 }
@@ -390,7 +390,7 @@ body{
     background-color: #183153;
     width: 200px;
     border-radius: 3px;
-    height: 30px;
+    height: 40px;
 
 }
 
@@ -412,10 +412,17 @@ body{
  
 }
 
+.image-blog-view img{
+    width: 600px;
+    height: 300px;
+    bordeR: 1px solid #03060a;
+    margin:0 auto;
+}
+
 .image-blog-edit img{
     width: 400px;
     height: 550px;
-    bordeR: 4px solid #183153;
+    border: 4px solid #183153;
 }
 .go-back{
     font-size:25px;
