@@ -19,11 +19,11 @@
         <div class="col span_2_of_3 header">
     
             <div class="section group">        
-              <div class="col span_1_of_6">  <a href="./index.html">Home </a></div>
-                 <div class="col span_1_of_6"> <a href="./News/news.html">Blog  </a></div>
-                <div class="col span_1_of_6"> <a href="./Culture/culture.html"> Culture </a></div>
-                <div class="col span_1_of_6"> <a href="./Business/business.html"> Business </a>  </div>
-                <div class="col span_1_of_6"> <a href="./Science/science.html">Science</a> </div>
+              <div class="col span_1_of_6">  <a href="./index.php">Home </a></div>
+                 <div class="col span_1_of_6"> <a href="./News/news.php">Blog  </a></div>
+                <div class="col span_1_of_6"> <a href="./Culture/culture.php"> Culture </a></div>
+                <div class="col span_1_of_6"> <a href="./Business/business.php"> Business </a>  </div>
+                <div class="col span_1_of_6"> <a href="./Science/science.php">Science</a> </div>
             </div>
         
         </div>

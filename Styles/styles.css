@@ -264,10 +264,12 @@ body{
 }
 .view-blog-entry{
     width:40%;
-   
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
     margin:10px;
     padding:10px;
-    background-color:wheat
+    background-color:#e6e6e5
 
 }
 .wiew-blog-alt{
@@ -276,22 +278,23 @@ body{
 }
 .wiew-blog-alt button{
   width:100px;
-  height:30px;
+ 
   padding:15px;
   color:white;
-  background-color:black;
+  background-color:steelblue;
   text-align:center;
   outline:none;
   border:none;
   border-radius:3px;
-  transition: 2s;
+  transition: 1s;
 } 
 .wiew-blog-alt button:hover{
-    background-color:rgb(63, 63, 63);
+    background-color:rgb(19, 121, 204);
     cursor:pointer;
 }
 .blogs{
     width:100%;
     display:flex;
+    flex-wrap: wrap;
     justify-content:space-around;
 }
