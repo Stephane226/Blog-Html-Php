@@ -1,5 +1,4 @@
 
-<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,74 +49,49 @@
         <div class="col span_2_of_3">
         <h4>All Blogs</h4>
 <div class="blogs">
-        <div class="view-blog-entry">
-            <h3>Why Are The Animals Living At The Forest?</h3>
-            <img src="../images/post1.jpeg" width="100%" height="200px" alt="">
-            <p>packages and web page editors now use Lorem Ipsum as their 
-                default model text, and a search for 'lorem ipsum' will 
-                uncover many web sites still in their infancy. Various 
-                versions have evolved over the years, sometimes...
+       
+<?php
+
+require("../connectdb.php");
+
+$select = $conn->query("SELECT * FROM blog_posts");
+while($row = $select->fetch()){
+ 
+  $title = $row['Title'];
+  $minicontent = $row['Minicontent'];
+  $content = $row['Content'];
+  $image = $row['Image'];
+  $banner = $row['Banner'];
+  $date = $row['Date'];
+  
+
+   ?>
+   
+   <div class="view-blog-entry">
+            <h3><?php echo  $title ?></h3>
+            <img src="../images/<?php echo  $image ?>" width="100%" height="200px" alt="">
+            <p>
+               <?php echo $minicontent  ?>
 
 
             </p>
             <div class="wiew-blog-alt">
                <a href="../view.php"> <button>Read All</button></a>
-                <div><span> 03/04/2021</span> By Admin</div>
+                <div><span> <?php echo $date  ?></span> By Admin</div>
             </div>
 
         </div>
         
+   
+   
+   
+   <?php
 
-        <div class="view-blog-entry">
-            <h3>Why Are The Animals Living At The Forest?</h3>
-            <img src="../images/post1.jpeg" width="100%" height="200px" alt="">
-            <p>packages and web page editors now use Lorem Ipsum as their 
-                default model text, and a search for 'lorem ipsum' will 
-                uncover many web sites still in their infancy. Various 
-                versions have evolved over the years, sometimes...
+}
 
+?>
+        
 
-            </p>
-            <div class="wiew-blog-alt">
-                <button>Read All</button>
-                <div><span> 03/04/2021</span> By Admin</div>
-            </div>
-
-        </div>
-
-        <div class="view-blog-entry">
-            <h3>Why Are The Animals Living At The Forest?</h3>
-            <img src="../images/post1.jpeg" width="100%" height="200px" alt="">
-            <p>packages and web page editors now use Lorem Ipsum as their 
-                default model text, and a search for 'lorem ipsum' will 
-                uncover many web sites still in their infancy. Various 
-                versions have evolved over the years, sometimes...
-
-
-            </p>
-            <div class="wiew-blog-alt">
-                <button>Read All</button>
-                <div><span> 03/04/2021</span> By Admin</div>
-            </div>
-
-        </div>
-
-        <div class="view-blog-entry">
-            <h3>Why Are The Animals Living At The Forest?</h3>
-            <img src="../images/post1.jpeg" width="100%" height="200px" alt="">
-            <p>packages and web page editors now use Lorem Ipsum as their 
-                default model text, and a search for 'lorem ipsum' will 
-                uncover many web sites still in their infancy. Various 
-                versions have evolved over the years, sometimes...
-
-
-            </p>
-            <div class="wiew-blog-alt">
-                <button>Read All</button>
-                <div><span> 03/04/2021</span> By Admin</div>
-            </div>
-
-        </div>
     </div>
         </div>
 
