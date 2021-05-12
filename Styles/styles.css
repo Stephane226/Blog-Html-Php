@@ -493,7 +493,7 @@ height:200px;
     justify-content:space-around;
 
 }
-.delete-post-select button{
+.delete-post-select input{
 
     width: 100px;
     height:30px;

@@ -1,4 +1,5 @@
-<?php ?>
+
+        
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,23 +17,56 @@
     <h3 style="margin-left:50px"> All Posts <a href="post.php"> <button class="add-post-top-btn">Add Post <i class="fas fa-plus-circle"></i></button></a> </h3>
          
 <br>
-          <div class="blog-row">
+         
+
+<?php 
+
+require("../connectdb.php");
+
+
+
+
+$select = $conn->query("SELECT * FROM blog_posts");
+while($row = $select->fetch()){
+  $id = $row['id'];
+  $title = $row['Title'];
+  $minicontent = $row['Minicontent'];
+  $content = $row['Content'];
+  $image = $row['Image'];
+  $banner = $row['Banner'];
+  $date = $row['Date'];
+  
+
+   ?>
+   
+   <div class="blog-row">
           <table>
             <tr>
-              <td width="10%"> Post no: 1 <br> 02/04/2021</td>
-              <td width="40%"> Why are the man all pordige all ?</td>
-              <td width="10%"> <a href="view.php"> <span><i class="fas fa-eye"></i> </span>  View </a> </td>
-              <td width="10%"> <a href="modify.php"> <span> <i class="fas fa-pen"></i> </span> Modify </a></td>
+              <td width="10%"> Post no: 1 <br><?php echo $date  ?> </td>
+              <td width="40%"><?php echo  $title ?></td>
+              <td width="10%"> <a href="view.php?id=<?php echo $id  ?>"> <span><i class="fas fa-eye"></i> </span>  View </a> </td>
+              <td width="10%"> <a href="modify.php?id=<?php echo $id  ?>">  <span> <i class="fas fa-pen"></i> </span> Modify </a></td>
               <td width="20%"><a href=""> <span>  <i class="fas fa-signal"></i></span> Active</a> / <a href=""> Desactive</a></td>
-              <td width="10%"> <a href="delete.php"><span> <i class="fas fa-trash"></i> </span> Delete</a></td>
+              <td width="10%"> <a href="delete.php?id=<?php echo $id  ?>"> <span> <i class="fas fa-trash"></i> </span> Delete</a></td>
             </tr>
           </table>
           </div>
+        
+   
+   
+   
+   <?php
 
+}
+
+?>
          
 
         
    </div>
+
+
+
  </section>
 
 

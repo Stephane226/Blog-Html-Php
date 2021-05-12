@@ -1,4 +1,31 @@
-<?php ?>
+<?php
+
+
+
+if(isset($_GET['id'])){
+    $id= $_GET['id'];
+
+    function button1() {
+        require("../connectdb.php");
+        $db = $conn->prepare('DELETE FROM blog_posts WHERE id = ?');
+   $db->execute(array($_GET['id']));
+   header('Location: index.php') ;
+   }
+   function button2() {
+      header('Location: index.php') ;
+   }
+
+    if(array_key_exists('button1', $_POST)) {
+       button1();
+   }
+   else if(array_key_exists('button2', $_POST)) {
+       button2();
+   }
+  
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +42,13 @@
                        <h3>Do you want to delete that post?</h3>
 
                        <div class="delete-post-select"> 
-                         <a href=""> <button> YES</button></a> 
-                         <a href="index.php"> <button > NO</button></a> 
+                       <form method="post">
+        <input type="submit" name="button1"
+                class="button" value="YES" />
+          
+        <input type="submit" name="button2"
+                class="button" value="NO" />
+    </form>
                        </div>
                    </div>
 </body>
