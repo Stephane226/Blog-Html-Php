@@ -18,19 +18,63 @@
   margin: 0 auto;
 }
 
+.banner-home{
+    width:100%;
+    height:500px;
+    background-image:url('./images/banr.jpg');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+
+.banner-home-secong{
+    width:100%;
+    height:300px;
+    background-image:url('./images/blog-area.jpg');
+    background-size:contain;
+    background-position: center;
+    background-repeat:repeat-x;
+
+}
+
+.bottom-section{ 
+       background-color: #184157;
+    margin-bottom: 100px;
+}
+
 .section p{
     padding:10px;
+}
+
+.container-parent .section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+.alt-blog-p{
+    background-color:wheat
 }
 .content-top-btn {
     width: 300px;
     height: 50px;
-    background-color: green;
+    background-color: #365e6a;
     color: white;
     margin: 0 auto;
     outline: none;
     border: none;
 }
-
+.img-alt{
+    border: 4px solid wheat;
+}
+.blog-group1 {
+    background-color: rgb(54 94 106);
+    color: #ece7e7;
+}
 .container-parent .section .col {
     border:none !important;
     background-color: white;
@@ -61,7 +105,7 @@
 <div class="header">
     <div class="section group">
         <div class="col span_1_of_3">
-            logo        
+        <i class="fab fa-hacker-news fab" style="font-size:70px; color:#365e6a;"></i>       
         </div>
         <div class="col span_2_of_3 header">
     
@@ -558,12 +602,12 @@
 
 
 
-        <div class="section group displaycenter">
+        <div class="section group displaycenter bottom-section">
             <div class="col span_1_of_2">
     <div class="blog-group">
      
       <div>
-    <img  class="img" src="./images/img5.jpeg"  width="500px" height="700px" style="margin-top:-100px">
+    <img  class="img img-alt" src="./images/img5.jpeg"  width="500px" height="700px" style="margin-top:-100px">
       </div>
     </div>            
     </div>
