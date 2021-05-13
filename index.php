@@ -10,6 +10,7 @@
     <title>blog Islam</title>
  <style>
 .section {
+    
   clear: both;
   padding: 0px;
 
@@ -17,6 +18,9 @@
   margin: 0 auto;
 }
 
+.section p{
+    padding:10px;
+}
 .content-top-btn {
     width: 300px;
     height: 50px;
@@ -28,6 +32,7 @@
 }
 
 .container-parent .section .col {
+    border:none !important;
     background-color: white;
     /* border: 1px solid black; */
     padding: 3px;
@@ -36,6 +41,16 @@
     -moz-box-shadow: -7px -6px 19px -15px rgba(0,0,0,0.75);
     width: 300px;
     margin: 0 auto;
+}
+
+.img {
+    transform: scale(1.01); 
+  transition: transform .4s; /* Animation */
+  
+}
+
+.img:hover {
+  transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
  </style>
@@ -78,7 +93,7 @@
         <div class="col span_1_of_3">
         <div class="content-top">
             <div>
-              <img src="images/img1.jpeg" width="300px" height="300px;">
+              <img  class="img" src="images/img1.jpeg" width="300px" height="300px;">
             </div>
             <p style="padding:10px">Lorem des ale sla osa lsd sf d asd s;es les ode olsasl lsao socsom 
                 msodmela mosamc os;cmosa osm;sodms mosmcsd  sk ksnks nksns [sdsm nskndaen nskc nksdek alsk </p>
@@ -94,7 +109,7 @@
 
             <div class="content-top">
                 <div>
-                  <img src="images/img2.jpeg" width="300px" height="300px;">
+                  <img  class="img"  src="images/img2.jpeg" width="300px" height="300px;">
                 </div>
                 <p style="padding:10px">Lorem des ale sla osa lsd sf d asd s;es les ode olsasl lsao socsom 
                     msodmela mosamc os;cmosa osm;sodms mosmcsd  sk ksnks nksns [sdsm nskndaen nskc nksdek alsk </p>
@@ -109,7 +124,7 @@
 
 <div class="content-top">
     <div>
-      <img src="images/img2.jpeg" width="300px" height="300px;">
+      <img  class="img" src="images/img2.jpeg" width="300px" height="300px;">
     </div>
     <p style="padding:10px">Lorem des ale sla osa lsd sf d asd s;es les ode olsasl lsao socsom 
         msodmela mosamc os;cmosa osm;sodms mosmcsd  sk ksnks nksns [sdsm nskndaen nskc nksdek alsk </p>
@@ -127,7 +142,7 @@
 
             <div class="content-top">
                 <div>
-                  <img src="images/img3.jpeg" width="300px" height="300px;">
+                  <img  class="img"  src="images/img3.jpeg" width="300px" height="300px;">
                 </div>
                 <p style="padding:10px">Lorem des ale sla osa lsd sf d asd s;es les ode olsasl lsao socsom 
                     msodmela mosamc os;cmosa osm;sodms mosmcsd  sk ksnks nksns [sdsm nskndaen nskc nksdek alsk </p>
@@ -167,7 +182,7 @@
     <h6>Best Thaughts...</h6>
       </div>
       <div>
-  <img src="./images/img5.jpeg" >
+  <img  class="img"  src="./images/img5.jpeg" >
       </div>
 </div>            
 </div>
@@ -189,7 +204,7 @@
                   <h6>Best Thaughts...</h6>
                     </div>
                     <div>
-                <img src="./images/img3.jpeg" >
+                <img  class="img"  src="./images/img3.jpeg" >
                     </div>
               </div> 
                 
@@ -216,7 +231,7 @@
 <h6>Best Thaughts...</h6>
   </div>
   <div>
-<img src="./images/img5.jpeg" >
+<img  class="img"  src="./images/img5.jpeg" >
   </div>
 </div>            
 </div>
@@ -238,7 +253,7 @@
               <h6>Best Thaughts...</h6>
                 </div>
                 <div>
-            <img src="./images/img3.jpeg" >
+            <img  class="img" src="./images/img3.jpeg" >
                 </div>
           </div> 
             
@@ -453,7 +468,7 @@
 <h6>Best Thaughts...</h6>
   </div>
   <div>
-<img src="./images/img5.jpeg" >
+<img  class="img" src="./images/img5.jpeg" >
   </div>
 </div>            
 </div>
@@ -475,7 +490,7 @@
               <h6>Best Thaughts...</h6>
                 </div>
                 <div>
-            <img src="./images/img3.jpeg" >
+            <img class="img"  src="./images/img3.jpeg" >
                 </div>
           </div> 
             
@@ -548,7 +563,7 @@
     <div class="blog-group">
      
       <div>
-    <img src="./images/img5.jpeg"  width="500px" height="700px" style="margin-top:-100px">
+    <img  class="img" src="./images/img5.jpeg"  width="500px" height="700px" style="margin-top:-100px">
       </div>
     </div>            
     </div>
