@@ -3,7 +3,7 @@
 
 
 if(isset($_GET['id'])){
-    $id= $_GET['id'];
+    $id= $_GET['id'];echo "alert($id)";
 
     function button1() {
         require("../connectdb.php");

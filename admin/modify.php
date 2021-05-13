@@ -1,5 +1,72 @@
-<?php 
- //echo(date("d-m-Y",time()));?>
+    
+<?php
+
+
+if(!empty($_POST)){
+
+    $id =  $_GET['id'];
+    echo $id;
+function checkInput($data){
+    $data = htmlspecialchars($data);
+    $data = trim($data);
+    $data = stripslashes($data);
+    return $data;
+
+
+}
+
+$titleUpdated = $_POST['title'];
+//$minicontentUpdated = htmlspecialchars($_POST['minicontent']);
+$contentUpdated = htmlspecialchars($_POST['content']);
+$bannerTmpUpdated = $_FILES['banner']['tmp_name'];
+$bannerUpdated = checkInput($_FILES['banner']['name']);
+$imageUpdated =  checkInput($_FILES['image']['name']);
+
+$imgTmpUpdated =$_FILES['image']['tmp_name'];
+
+$imgLocationUpdated ='../images/'.basename($imageUpdated);
+$imgLocationbnrUpdated ='../images/'.basename($bannerUpdated);
+$imageExtensionUpdated     = pathinfo($imgLocationUpdated,PATHINFO_EXTENSION);
+$dateUpdated =  date("d-m-Y",time());
+
+
+
+
+
+echo "<script> alert('sum')</script>";
+
+
+
+if(empty($titleUpdated) || empty($contentUpdated) || empty($imageUpdated) || empty($bannerUpdated) ){
+    echo "<script> alert('Please All Fields Are Required!')</script>";
+
+}
+else if(!empty($titleUpdated)  && !empty($contentUpdated) && !empty($imageUpdated) && !empty($bannerUpdated) ){ 
+   
+
+    //verify Images
+    
+
+
+    require("../connectdb.php");
+    $select = $conn->prepare( " UPDATE blog_posts SET Title=?, Content=?,Image=?, Banner=?, Date=?  WHERE id=? ");
+    $select->execute(array($titleUpdated,$contentUpdated, $imageUpdated, $bannerUpdated,$dateUpdated,$id));
+
+
+
+    move_uploaded_file($imgTmpUpdated, $imgLocationUpdated);
+    move_uploaded_file($bannerTmpUpdated, $imgLocationbnrUpdated);
+
+}
+ ?><script> alert('Your Modification Has Succesfully Done')</script> <?php
+header("location: index.php");
+
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,19 +88,58 @@
    <div class="admin-tables">
 
  <h3>Edit Your Blog</h3>
-           <form action="" class="blog-post-form">
-     <div class="form-blog-post">
-               <input type="text" class="blog-title blog-posts">
-               <input type="file" class="blog-file blog-posts">
-               <textarea name="" id="" class="blog-posts text-area">   </textarea>
+
+ <?php
+
+require("../connectdb.php");
+if(isset($_GET['id'])){
+  $id =  $_GET['id'];
+
+  echo "alert($id)";
+$select = $conn->prepare("SELECT * FROM blog_posts WHERE id = ?");
+$select->execute(array($id));
+
+$oneRow = $select->fetch();
+if($select->rowCount() > 0){
+
+
+
+  $title = $oneRow['Title'];
+  $minicontent = $oneRow['Minicontent'];
+  $content = $oneRow['Content'];
+  $image = $oneRow['Image'];
+  $banner = $oneRow['Banner'];
+  $date = $oneRow['Date'];
+  
+}
+   ?>
+              <form  action="<?php echo 'modify.php?id='. $id; ?>" role="form" method="post" class="blog-post-form" enctype="multipart/form-data">
+
+
+
+              <div class="form-blog-post">
+               <input type="text" name="title"  value="<?php echo  $title ?>" class="blog-title blog-posts">
+               <input type="file" name="image"  id="img" class="blog-file blog-posts">
+               <input type="file" name="banner" id="imgBnr"  class="blog-file blog-posts">
+               <textarea name="content" id="" class="blog-posts text-area"> <?php echo  $content ?>    </textarea>
+              
           
-               <button type="submit" class="form-top-btn">Submit</button>
+               <button type="submit"  class="form-top-btn">Submit</button>
   <br><br>
     </div>
     <div class="image-blog-edit">
-        <img src="../images/img3.jpeg" alt="">
+        <img src="../images/<?php echo  $image ?>" alt="">
     </div>
+
+
            </form>
+      
+           <?php  
+           
+
+        }
+       
+           ?>
 </div>
 </section>
 
