@@ -56,6 +56,7 @@ require("../connectdb.php");
 
 $select = $conn->query("SELECT * FROM blog_posts");
 while($row = $select->fetch()){
+  $id = $row['id'];
  
   $title = $row['Title'];
   $minicontent = $row['Minicontent'];
@@ -76,7 +77,7 @@ while($row = $select->fetch()){
 
             </p>
             <div class="wiew-blog-alt">
-               <a href="../view.php"> <button>Read All</button></a>
+               <a href="../view.php?id=<?php echo  $id ?> "> <button>Read All</button></a>
                 <div><span> <?php echo $date  ?></span> By Admin</div>
             </div>
 
