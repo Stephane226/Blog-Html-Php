@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="./Styles/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>blog Islam</title>
+ <style>
+.section {
+  clear: both;
+  padding: 0px;
+
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content-top-btn {
+    width: 300px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+}
+
+.container-parent .section .col {
+    background-color: white;
+    /* border: 1px solid black; */
+    padding: 3px;
+    box-shadow: -7px -6px 19px -15px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: -7px -6px 19px -15px rgb(0 0 0 / 75%);
+    -moz-box-shadow: -7px -6px 19px -15px rgba(0,0,0,0.75);
+    width: 300px;
+    margin: 0 auto;
+}
+
+ </style>
 </head>
 <body>
     
@@ -47,9 +78,9 @@
         <div class="col span_1_of_3">
         <div class="content-top">
             <div>
-              <img src="images/img1.jpeg" width="250px" height="300px;">
+              <img src="images/img1.jpeg" width="300px" height="300px;">
             </div>
-            <p>Lorem des ale sla osa lsd sf d asd s;es les ode olsasl lsao socsom 
+            <p style="padding:10px">Lorem des ale sla osa lsd sf d asd s;es les ode olsasl lsao socsom 
                 msodmela mosamc os;cmosa osm;sodms mosmcsd  sk ksnks nksns [sdsm nskndaen nskc nksdek alsk </p>
 
                 <button class="content-top-btn">View More</button>
@@ -63,9 +94,9 @@
 
             <div class="content-top">
                 <div>
-                  <img src="images/img2.jpeg" width="250px" height="300px;">
+                  <img src="images/img2.jpeg" width="300px" height="300px;">
                 </div>
-                <p>Lorem des ale sla osa lsd sf d asd s;es les ode olsasl lsao socsom 
+                <p style="padding:10px">Lorem des ale sla osa lsd sf d asd s;es les ode olsasl lsao socsom 
                     msodmela mosamc os;cmosa osm;sodms mosmcsd  sk ksnks nksns [sdsm nskndaen nskc nksdek alsk </p>
     
                     <button class="content-top-btn">View More</button>
@@ -73,7 +104,20 @@
             </div>     
            </div>
 
+           <div class="col span_1_of_3">
 
+
+<div class="content-top">
+    <div>
+      <img src="images/img2.jpeg" width="300px" height="300px;">
+    </div>
+    <p style="padding:10px">Lorem des ale sla osa lsd sf d asd s;es les ode olsasl lsao socsom 
+        msodmela mosamc os;cmosa osm;sodms mosmcsd  sk ksnks nksns [sdsm nskndaen nskc nksdek alsk </p>
+
+        <button class="content-top-btn">View More</button>
+
+</div>     
+</div>
 
 
 
@@ -83,9 +127,9 @@
 
             <div class="content-top">
                 <div>
-                  <img src="images/img3.jpeg" width="250px" height="300px;">
+                  <img src="images/img3.jpeg" width="300px" height="300px;">
                 </div>
-                <p>Lorem des ale sla osa lsd sf d asd s;es les ode olsasl lsao socsom 
+                <p style="padding:10px">Lorem des ale sla osa lsd sf d asd s;es les ode olsasl lsao socsom 
                     msodmela mosamc os;cmosa osm;sodms mosmcsd  sk ksnks nksns [sdsm nskndaen nskc nksdek alsk </p>
     
                     <button class="content-top-btn">View More</button>
@@ -499,7 +543,7 @@
 
 
 
-        <div class="section group">
+        <div class="section group displaycenter">
             <div class="col span_1_of_2">
     <div class="blog-group">
      

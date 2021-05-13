@@ -5,12 +5,19 @@ body{
 }
 
 
+.displaycenter{
+
+  width:80%;
+  margin:0 auto;
+}
+
 
 /*  SECTIONS  */
 .section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
+  clear: both;
+  padding: 0px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /*  COLUMN SETUP  */
@@ -422,10 +429,8 @@ body{
     border:none
 
 }
-.blog-post-section{
- /* background-image: url("../images/bl.jpg");*/
- 
-}
+
+
 
 .image-blog-view img{
     width: 600px;
@@ -507,52 +512,6 @@ height:200px;
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .site-footer
 {
